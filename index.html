@@ -1,0 +1,58 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.css" />
+    <script src="./lib/jquery.js"></script>
+    <script src="./js/cmt.js"></script>
+  </head>
+
+  <body style="padding: 15px;">
+    <div class="container">
+      <!-- 评论面板 -->
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">发表评论</h3>
+        </div>
+        <form class="panel-body" id="btnAdd">
+          <div>评论人：</div>
+          <input type="text" class="form-control" id="cmtUser" name='username' value="">
+          <div>评论内容:</div>
+          <textarea class="form-control" id="cmtText" name='content' value=""></textarea>
+          <button type="submit" class="btn btn-primary">提交评论</button>
+        </form>
+      </div>
+
+
+
+      <!-- 评论列表 -->
+
+      <ul class="list-group" id="listAdd">
+        <li class="list-group-item">
+          <span class="badge" style="background-color: orange;">2022-02-12</span>
+          <span class="badge" style="background-color: blueviolet">评论人:张三</span>
+          vue
+        </li>
+        <li class="list-group-item">
+          <span class="badge" style="background-color: orange;">2022-05-08</span>
+          <span class="badge" style="background-color: burlywood;">评论人:李四</span>
+          bootsrtap
+        </li>
+        <li class="list-group-item">
+          <span class="badge" style="background-color: orange;">2022-03-11</span>
+          <span class="badge" style="background-color: burlywood;">评论人:王五</span>
+          ajax
+        </li>
+      </ul>
+
+
+    </div>
+  </body>
+
+  </html>
